@@ -3,18 +3,12 @@
 <title>Upload</title>
 </head>
 <body>
-<form action="?method=PUT" method="POST" enctype="multipart/form-data">
-<table>
-    <tbody>
-        <tr>
-            <td>File upload</td>
-            <td><input name="attachment" type="file" /></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Save"></td>
-        </tr>
-    </tbody>
-</table>
-</form>
+<input type="button" value="Choose image" onClick="openImage()" />
+
+<script type="text/javascript">
+    function openImage() {
+        Android.openImage();
+    }
+</script>
 </body>
 </html>
